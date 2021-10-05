@@ -185,10 +185,38 @@
 
       echo '<br>Meu nome é '.NOME.', minha indentificação é '.ID. '.';
 
+      function exibir()
+      {
+        echo "<hr> Nossa função exibir: ";
+        echo NOME;
+      }
 
+      exibir();
 
     ?>
 
+
+    <br><br>
+    <h3>ARRAYS</h3>
+
+    <h2>Indíce:</h2>
+    <p>Posição especifica de um array</p>
+    <?php
+     $livros = array("Laravel", "PHP", "Flutter");
+     echo "Indice zero do array livros: ",$livros[0]; //Especifico de um indice
+     echo "<br>";
+     print_r($livros);
+
+     echo "<hr>";
+     echo "Incrementar em um array vazio";
+     echo "<hr>";
+     $linguagem = array();
+     $linguagem[] = "C#";
+     $linguagem[] = "C++";
+     $linguagem[] = "Python";
+     print_r($linguagem);
+     
+    ?>
 
 
     <br><br><br><br><br>
