@@ -53,7 +53,7 @@
       $$agencia = "Grafica";
 
       echo $Brawn;
-      echo " 1 - $agencia";    
+      echo "<br> $agencia";    
     ?>
     
     <h2>04 - TIPOS DE DADOS</h2>
@@ -87,6 +87,7 @@
       endif;
     ?>
 
+    <br><br>
     <h3>COMPOSTOS</h3>
     <?php
       echo "<br> Array <br>";
@@ -126,6 +127,7 @@
 
     ?>
 
+    <br><br>
     <h3>ESCOPO DE VARIAVÉIS</h3>
     <?php 
       echo "<br> ESCOPO GLOBAL <br>";
@@ -166,6 +168,7 @@
     
     ?>
 
+    <br><br>
     <h3>CONSTANTES</h3>
     <?php
       echo "Indentificador para um valor ÚNICO <br><br>";
