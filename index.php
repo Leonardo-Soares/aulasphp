@@ -10,16 +10,15 @@
 
     <title>Hello, world!</title>
   </head>
+
   <body>
     <h1 class="text-center">01 - FUNDAMENTOS BÁSICOS</h1>
-
     <?php
       echo "Teste echo <br>";
       print "Teste print";
     ?>
 
     <h2 class="text-center">02 - VARIÁVEIS</h2>
-
     <?php
       $nome = "Leonardo";
       $nasc = "26/08/2021";
@@ -49,7 +48,6 @@
     ?>
 
     <h2>03 - VARIÁVEIS DINÂMICAS</h2>
-
     <?php 
       $agencia = "Brawn";
       $$agencia = "Grafica";
@@ -57,7 +55,7 @@
       echo $Brawn;
       echo " 1 - $agencia";    
     ?>
-    <hr>
+    
     <h2>04 - TIPOS DE DADOS</h2>
     <h3>ESCALARES</h3>
     <?php 
@@ -90,7 +88,6 @@
     ?>
 
     <h3>COMPOSTOS</h3>
-
     <?php
       echo "<br> Array <br>";
       $dadoArray = array(
@@ -130,7 +127,6 @@
     ?>
 
     <h3>ESCOPO DE VARIAVÉIS</h3>
-    
     <?php 
       echo "<br> ESCOPO GLOBAL <br>";
       $nome = "Leonardo";
@@ -197,25 +193,68 @@
 
 
     <br><br>
-    <h3>ARRAYS</h3>
+    <h3>ARRAYS #1</h3>
 
-    <h2>Indíce:</h2>
-    <p>Posição especifica de um array</p>
+    <p>Índice: Posição especifica de um array</p>
     <?php
      $livros = array("Laravel", "PHP", "Flutter");
-     echo "Indice zero do array livros: ",$livros[0]; //Especifico de um indice
      echo "<br>";
-     print_r($livros);
+     echo "Indíce: posição do elemento no array";
+     echo "<br>";
+     echo "Indíce zero do array livros, chamada especifíca de um array: <b>",$livros[0],"</b>";
+     echo "<br>";
+     echo "Chamada de um array inteiro: ";
+     print_r($livros); // Print especial para exibir arrays
+     echo "<hr>";
+
+     $pacientes = array(1=>"Paciente 123", 2=>"Paciente 23");
+     print_r($pacientes);
+     echo "<br>";
+     $pacientes[10] = "Paciente 99";
+     print_r($pacientes);
+     echo "<br>";
+     echo $pacientes[10]; // Incremento em uma posição especifíca de um array
 
      echo "<hr>";
-     echo "Incrementar em um array vazio";
-     echo "<hr>";
+     echo "O array não precisa iniciar com elementos, ele pode ser vazio.";
+     echo "No exemplo abaixo vamos incrementar em um array vazio";
+     echo "<br>";
      $linguagem = array();
      $linguagem[] = "C#";
      $linguagem[] = "C++";
      $linguagem[] = "Python";
      print_r($linguagem);
      
+    ?>
+
+    <br><br>
+    <h3>Aula 13 - ARRAYS #2</h3>
+    <?php
+      echo "count(nomearray): exibi a quantidade de ELEMENTOS dentro de um array";
+      $brinquedos = array("Boneco", "Carro");
+      $total = count($brinquedos);
+      echo "Total de briquedos agora é: <b>", $total, "</b>";
+      echo "<br>";
+      // incrementa
+      $brinquedos[] = "Barco";
+      $brinquedos[] = "Avião";
+      $total = count($brinquedos);
+      echo count($brinquedos);
+      echo "Total de briquedos agora é: <b>", $total, "</b>";
+
+      echo "<h8>", $brinquedos[0], "</h8>";
+      echo "<br>";
+      foreach ($brinquedos as $valor) {
+        
+        echo $valor." - R$: <br> [beta] ";  
+        # code...
+      }
+
+    ?>
+
+    <br><br>
+    <h3>Aula 14 - ARRAYS #3</h3>
+    <?php
     ?>
 
 
